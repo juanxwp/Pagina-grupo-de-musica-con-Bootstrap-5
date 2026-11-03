@@ -4,10 +4,54 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mago-de-oz</title>
+    <title>Mägo de Oz · Web Fan</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
+        <div class="container">
+          <!-- marca: icono -->
+          <a class="navbar-brand">
+            <img src="/img/logo.png" alt="" height="45">
+          </a>
+          <!-- boton hamburguesa -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- menu desplegable -->
+          <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="" class="nav-link"><i class="bi bi-house-door" aria-hidden="true"></i>Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Grupo</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a href="#discografia" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Discografía</a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a href="#" class="dropdown-item">Mägo de Oz</a></li>
+                  <li><a href="#" class="dropdown-item">Jesús de Chamberí</a></li>
+                  <li><a href="#" class="dropdown-item">Alicia en el Metalverso</a></li>
+                  <li><a href="#" class="dropdown-item">Malicia:La noche de las brujas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a href="#discografia" class="dropdown-item">Ver todo</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a href="" class="nav-link">Gira</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Contacto</a>
+              </li>
+            </ul>
+          </div>          
+        </div>
+      </nav>
+    </header>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
