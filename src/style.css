@@ -2,29 +2,21 @@
     aspect-ratio: 3/4;
     object-fit: cover;
 }
+
 body {
-  background-color: #000000;
   font-family: Arial, sans-serif;
-  color: white;
 }
 
 h2 {
-  color: white;
   margin-bottom: 30px;
   text-align: center;
 }
 
 .card {
-  background-color: white;
   border: 1px solid #cccccc;
   border-radius: 8px;
   height: 100%;
   transition: 0.2s;
-}
-
-.card h5,
-.card p {
-  color: black;
 }
 
 .card .btn {
@@ -40,16 +32,94 @@ section {
   margin-bottom: 40px;
 }
 
-section > p {
-  color: white;
-}
 :root {
-  --bs-body-bg: #000000;
-  --bs-body-color: #ffffff;
   --bs-primary: #8b0000;
 }
+
 .card-img-top {
   height: 140px;
   object-fit: cover;
   object-position: center 25%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn-comprar-check {
+  display: none;
+}
+
+.btn-comprar-check + .btn-comprar-label::before {
+  content: "Comprar";
+}
+
+.btn-comprar-check:checked + .btn-comprar-label {
+  background-color: var(--bs-success) !important;
+  border-color: var(--bs-success) !important;
+  color: #fff !important;
+}
+
+.btn-comprar-check:checked + .btn-comprar-label::before {
+  content: "Comprado ";
+}
+
+.btn-comprar-check:checked + .btn-comprar-label .bi-ticket-perforated::before {
+  content: "\f26b";
+}
+
+/* ==========================================================
+   ESTILOS ESPECÍFICOS PARA EL MODO OSCURO ORIGINAL
+   ========================================================== */
+[data-bs-theme="dark"] body {
+  background-color: #000000;
+  color: white;
+}
+
+[data-bs-theme="dark"] h2 {
+  color: white;
+}
+
+[data-bs-theme="dark"] .card {
+  background-color: white;
+  border-color: #cccccc;
+}
+
+[data-bs-theme="dark"] .card h5,
+[data-bs-theme="dark"] .card p {
+  color: black;
+}
+
+[data-bs-theme="dark"] section > p {
+  color: white;
+}
+
+[data-bs-theme="dark"] footer {
+  background-color: #212529 !important;
+  color: #f8f9fa !important;
+}
+
+[data-bs-theme="dark"] footer a {
+  color: #f8f9fa !important;
+}
+
+[data-bs-theme="dark"] .modal-content {
+  background-color: #212529;
+  color: white;
+}
+
+[data-bs-theme="dark"] .accordion-item {
+  background-color: #212529;
+  color: white;
+  border-color: #6c757d;
+}
+
+[data-bs-theme="dark"] .accordion-button {
+  background-color: #212529;
+  color: white;
+}
+
+[data-bs-theme="dark"] .accordion-button:not(.collapsed) {
+  background-color: #212529;
+  color: white;
 }
